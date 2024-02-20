@@ -1,72 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Variable Excercise</title>
-  </head>
+<html>
+  <head></head>
   <body>
-    <section>
-      <button onclick="calculation += '1';console.log(calculation);">1</button>
+    <p>
+      <button
+        onclick="
+        Calculation('1');
+      "
+      >
+        1
+      </button>
 
-      <button onclick="calculation += '2';console.log(calculation);">2</button>
+      <button
+        onclick="
+        Calculation('2');
+      "
+      >
+        2
+      </button>
 
-      <button onclick="calculation += '3';console.log(calculation);">3</button>
+      <button
+        onclick="
+        Calculation('3');
+      "
+      >
+        3
+      </button>
 
-      <button onclick="calculation += ' + ';console.log(calculation);">
+      <button
+        onclick="
+        Calculation(' + ');
+      "
+      >
         +
       </button>
-    </section>
+    </p>
 
-    <section>
-      <button onclick="calculation += '4';console.log(calculation);">4</button>
+    <p>
+      <button
+        onclick="
+        Calculation('4');
+      "
+      >
+        4
+      </button>
 
-      <button onclick="calculation += '5';console.log(calculation);">5</button>
+      <button
+        onclick="
+        Calculation('5');
+      "
+      >
+        5
+      </button>
 
-      <button onclick="calculation += '6';console.log(calculation);">6</button>
+      <button
+        onclick="
+        Calculation('6');
+      "
+      >
+        6
+      </button>
 
-      <button onclick="calculation += ' - ';console.log(calculation);">
+      <button
+        onclick="
+        Calculation(' - ');
+      "
+      >
         -
       </button>
-    </section>
+    </p>
 
-    <section>
-      <button onclick="calculation += '7';console.log(calculation);">7</button>
+    <p>
+      <button
+        onclick="
+        Calculation('7');
+      "
+      >
+        7
+      </button>
 
-      <button onclick="calculation += '8';console.log(calculation);">8</button>
+      <button
+        onclick="
+        Calculation('8');
+      "
+      >
+        8
+      </button>
 
-      <button onclick="calculation += '9';console.log(calculation);">9</button>
+      <button
+        onclick="
+        Calculation('9');
+      "
+      >
+        9
+      </button>
 
-      <button onclick="calculation += ' * ';console.log(calculation);">
+      <button
+        onclick="
+        Calculation(' * ');
+      "
+      >
         *
       </button>
-    </section>
+    </p>
 
-    <section>
-      <button onclick="calculation += '0';console.log(calculation);">0</button>
+    <p>
+      <button
+        onclick="
+        Calculation('0');
+      "
+      >
+        0
+      </button>
 
-      <button onclick="calculation += ' / ';console.log(calculation);">
+      <button
+        onclick="
+        Calculation('.');
+      "
+      >
+        .
+      </button>
+
+      <button
+        onclick="
+        solution = eval(solution);
+        console.log(solution);
+      "
+      >
+        =
+      </button>
+
+      <button
+        onclick="
+        Calculation(' / ');
+      "
+      >
         /
       </button>
-    </section>
-    <button onclick="calculation = eval(calculation);console.log(calculation);">
-      =
-    </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        solution = '';
+        console.log(solution);
+      "
+      >
+        Clear
+      </button>
+    </p>
+
     <script>
-      let calculation = "";
+      let solution = "";
+
+      function Calculation(value) {
+        solution += value;
+        console.log(solution);
+      }
     </script>
-    <!-- <script>
-      const name = "Jaykumar Pokar";
-      console.log(`My name is: ${name}`);
-
-      const cost = 5 + 2 * 3 + 9;
-      console.log(`Cost of food: $${cost}`);
-
-      const tax = cost * 0.1;
-      console.log(`Tax (10%): $${tax}`);
-
-      const totalcost = cost + tax;
-      console.log(`Total cost: $${totalcost}`);
-    </script> -->
   </body>
 </html>
