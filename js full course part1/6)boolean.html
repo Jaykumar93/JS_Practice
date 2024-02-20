@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean page</title>
+  </head>
+  <body>
+    <script>
+      console.log(23 > 542);
+
+      console.log(5 == "5.00");
+      //This will say true since it will convert both the value into same format
+
+      if (true) {
+        console.log("true");
+      } else {
+        console.log("false");
+      }
+      const age = 32;
+      if (age >= 18) {
+        console.log("Congrats");
+        console.log("You can drive vehicles");
+      } else if (age <= 18) {
+        console.log("You can not drive");
+      }
+
+      if (0) {
+        console.log("falsy");
+      }
+
+      console.log(!0);
+      console.log("text" / 3);
+      variable = "";
+      console.log(variable);
+
+      console.log(0 ? "truthy" : "falsy");
+
+      false && console.log("hello");
+      currency = undefined || "dff";
+      console.log(currency);
+    </script>
+  </body>
+</html>
